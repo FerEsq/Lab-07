@@ -1,4 +1,4 @@
-/* Paleta de colores: https://coolors.co/2c5c7c-f7ebec-ddbdd5-ac9fbb-684756 */
+/* Paleta de colores: https://coolors.co/e5ffde-bbcbcb-9590a8-634b66-18020c */
 
 body{
     background-color: #BBCBCB;
@@ -6,7 +6,6 @@ body{
 
 h1{
     color: #634B66;
-    font-size: 36px;
     padding: 2px;
     text-shadow: 2px 2px #9590A8;
     text-align: center;
@@ -17,18 +16,17 @@ h2{
     font-size: 26px;
 }
 
+h3{
+    color: #634B66;
+    font-size: 20px;
+}
+
 p{
     color: #634B66;
-    font-size: 16px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 a{
     color: #634B66;
-    font-size: 16px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 i{
