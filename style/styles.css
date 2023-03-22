@@ -1,0 +1,67 @@
+/* Paleta de colores: https://coolors.co/2c5c7c-f7ebec-ddbdd5-ac9fbb-684756 */
+
+body{
+    background-color: #BBCBCB;
+}
+
+h1{
+    color: #634B66;
+    font-size: 36px;
+    padding: 2px;
+    text-shadow: 2px 2px #9590A8;
+    text-align: center;
+}
+
+h2{
+    color: #634B66;
+    font-size: 26px;
+}
+
+p{
+    color: #634B66;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a{
+    color: #634B66;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+i{
+    color: #634B66;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+progress{
+    display: block;
+    margin: 0 auto;
+    accent-color: #634B66;
+}
+
+font{
+    color: #634B66;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul {
+    color: #634B66;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
