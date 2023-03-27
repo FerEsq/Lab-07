@@ -3,6 +3,7 @@
 $english-violet: #634B66;
 $cool-gray: #9590A8;
 $ash-gray: #BBCBCB;
+$nyanza: #E5FFDE;
 
 .container {
     display: grid;
@@ -16,25 +17,35 @@ table{
     align-self: center;
 }
 
+th{
+    text-align: center !important;
+}
+
 body{
-    background-color: $ash-gray;
+    background-color: $ash-gray !important;
 }
 
 h1{
     color: $english-violet;
-    padding: 2px;
+    font-size: 32px;
+    padding: 20px;
     text-shadow: 2px 2px $cool-gray;
     text-align: center;
 }
 
 h2{
     color: $english-violet;
-    font-size: 26px;
+    font-size: 26px !important;
 }
 
 h3{
     color: $english-violet;
-    font-size: 20px;
+    font-size: 20px !important;
+}
+
+h4{
+    color: $english-violet;
+    font-size: 16px !important;
 }
 
 p{
@@ -42,7 +53,7 @@ p{
 }
 
 a{
-    color: $english-violet;
+    color: $english-violet !important;
 }
 
 b{
@@ -84,6 +95,22 @@ img {
     margin-right: auto;
 }
 
+footer {
+    background-color: $cool-gray !important;
+  }
+
+.footerText{
+    color: $nyanza !important;
+}
+
+.navbar {
+    background-color: $cool-gray !important;
+  }
+  
+.navbar a {
+    color: $nyanza !important;
+}
+
 .catAnimation {
     opacity: 0;
   animation-name: showImage;
@@ -100,3 +127,13 @@ img {
     opacity: 1;
   }
 } 
+
+audio {
+    width: 250px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    justify-self: center;
+    align-self: center;
+}
+  

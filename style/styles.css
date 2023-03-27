@@ -11,25 +11,35 @@ table {
   align-self: center;
 }
 
+th {
+  text-align: center !important;
+}
+
 body {
-  background-color: #BBCBCB;
+  background-color: #BBCBCB !important;
 }
 
 h1 {
   color: #634B66;
-  padding: 2px;
+  font-size: 32px;
+  padding: 20px;
   text-shadow: 2px 2px #9590A8;
   text-align: center;
 }
 
 h2 {
   color: #634B66;
-  font-size: 26px;
+  font-size: 26px !important;
 }
 
 h3 {
   color: #634B66;
-  font-size: 20px;
+  font-size: 20px !important;
+}
+
+h4 {
+  color: #634B66;
+  font-size: 16px !important;
 }
 
 p {
@@ -37,7 +47,7 @@ p {
 }
 
 a {
-  color: #634B66;
+  color: #634B66 !important;
 }
 
 b {
@@ -79,6 +89,22 @@ img {
   margin-right: auto;
 }
 
+footer {
+  background-color: #9590A8 !important;
+}
+
+.footerText {
+  color: #E5FFDE !important;
+}
+
+.navbar {
+  background-color: #9590A8 !important;
+}
+
+.navbar a {
+  color: #E5FFDE !important;
+}
+
 .catAnimation {
   opacity: 0;
   animation-name: showImage;
@@ -94,4 +120,12 @@ img {
   to {
     opacity: 1;
   }
+}
+audio {
+  width: 250px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  justify-self: center;
+  align-self: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -5,36 +5,53 @@ window.onload = () => {
 }
 
 function createHeader(){
+    let nav = document.createElement("nav");
+    nav.className = "navbar navbar-expand-md navbar-light";
+    console.log(nav)
+    document.body.appendChild(nav);
+
+    let div1 = document.createElement("div");
+    div1.className = "container-fluid mx-auto text-center";
+    nav.appendChild(div1);
+
+    let div2 = document.createElement("div");
+    div2.className = "collapse navbar-collapse";
+    div1.appendChild(div2);
+
+    let ul = document.createElement("ul");
+    ul.className = "navbar-nav mx-auto";
+    div2.appendChild(ul);
+
+    let liIndex = document.createElement("li");
+    liIndex.className = "nav-item";
+    ul.appendChild(liIndex);
+    let aIndex = document.createElement("a");
+    aIndex.className = "nav-link";
+    aIndex.setAttribute('href', "index.html");
+    aIndex.innerText = "Inicio";
+    liIndex.appendChild(aIndex);
+
+    let liPopular = document.createElement("li");
+    liPopular.className = "nav-item";
+    ul.appendChild(liPopular);
+    let aPopular = document.createElement("a");
+    aPopular.className = "nav-link";
+    aPopular.setAttribute('href', "libros-populares.html");
+    aPopular.innerText = "Libros Populares";
+    liPopular.appendChild(aPopular);
+
+    let liNew = document.createElement("li");
+    liNew.className = "nav-item";
+    ul.appendChild(liNew);
+    let aNew = document.createElement("a");
+    aNew.className = "nav-link";
+    aNew.setAttribute('href', "nuevos-lanzamientos.html");
+    aNew.innerText = "Nuevos Lanzamientos";
+    liNew.appendChild(aNew); 
+
     let header = document.createElement("header");
     console.log(header)
     document.body.appendChild(header);
-
-    let tableNav = document.createElement("table");
-    tableNav.cellPadding = "10";
-    tableNav.cellSpacing = "5";
-    header.appendChild(tableNav);
-
-    let thIndex = document.createElement("th");
-    tableNav.appendChild(thIndex);
-    let aIndex = document.createElement("a");
-    aIndex.innerText = "Inicio";
-    aIndex.setAttribute('href', "index.html");
-    thIndex.appendChild(aIndex);
-
-    let thPopular = document.createElement("th");
-    tableNav.appendChild(thPopular);
-    let aPopular = document.createElement("a");
-    aPopular.innerText = "Libros Populares";
-    aPopular.setAttribute('href', "libros-populares.html");
-    thPopular.appendChild(aPopular);
-
-    let thNew = document.createElement("th");
-    tableNav.appendChild(thNew);
-    let aNew = document.createElement("a");
-    aNew.innerText = "Nuevos Lanzamientos";
-    aNew.setAttribute('href', "nuevos-lanzamientos.html");
-    thNew.appendChild(aNew);
-
     let h1Title = document.createElement("h1");
     h1Title.innerText = "Nuevos Lanzamientos"
     header.appendChild(h1Title);
@@ -132,6 +149,7 @@ function createFooter(){
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
+    iPage.className = "footerText";
     iPage.innerText = "~ Página 2 ~"
     footer.appendChild(iPage);
     
