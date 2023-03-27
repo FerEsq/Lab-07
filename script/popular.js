@@ -48,9 +48,14 @@ function createContent(){
     h2Subtitle.innerText = "ㅤEstos son nuestros lanzamientos más populares:"
     document.body.appendChild(h2Subtitle);
 
+    let divContainer = document.createElement("div");
+    console.log(divContainer);
+    divContainer.className = "container";
+    document.body.appendChild(divContainer);
+
     let tableBooks = document.createElement("table");
     tableBooks.cellPadding = "10";
-    document.body.appendChild(tableBooks);
+    divContainer.appendChild(tableBooks);
 
     let td1 = document.createElement("td");
     tableBooks.appendChild(td1);

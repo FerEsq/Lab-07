@@ -1,69 +1,97 @@
 /* Paleta de colores: https://coolors.co/e5ffde-bbcbcb-9590a8-634b66-18020c */
-
-body{
-    background-color: #BBCBCB;
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
 }
 
-h1{
-    color: #634B66;
-    padding: 2px;
-    text-shadow: 2px 2px #9590A8;
-    text-align: center;
+table {
+  justify-self: center;
+  align-self: center;
 }
 
-h2{
-    color: #634B66;
-    font-size: 26px;
+body {
+  background-color: #BBCBCB;
 }
 
-h3{
-    color: #634B66;
-    font-size: 20px;
+h1 {
+  color: #634B66;
+  padding: 2px;
+  text-shadow: 2px 2px #9590A8;
+  text-align: center;
 }
 
-p{
-    color: #634B66;
+h2 {
+  color: #634B66;
+  font-size: 26px;
 }
 
-a{
-    color: #634B66;
+h3 {
+  color: #634B66;
+  font-size: 20px;
 }
 
-b{
-    color: #634B66;
+p {
+  color: #634B66;
 }
 
-i{
-    color: #634B66;
-    font-size: 16px;
-    display: block;
-    text-align: center;
+a {
+  color: #634B66;
 }
 
-table{
-    margin-left: auto;
-    margin-right: auto;
+b {
+  color: #634B66;
 }
 
-progress{
-    display: block;
-    margin: 0 auto;
-    accent-color: #634B66;
+i {
+  color: #634B66;
+  font-size: 16px;
+  display: block;
+  text-align: center;
 }
 
-font{
-    color: #634B66;
-    font-size: 16px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+progress {
+  display: block;
+  margin: 0 auto;
+  accent-color: #634B66;
+}
+
+font {
+  color: #634B66;
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 ul {
-    color: #634B66;
+  color: #634B66;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.catAnimation {
+  opacity: 0;
+  animation-name: showImage;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */

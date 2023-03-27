@@ -1,0 +1,102 @@
+/* Paleta de colores: https://coolors.co/e5ffde-bbcbcb-9590a8-634b66-18020c */
+
+$english-violet: #634B66;
+$cool-gray: #9590A8;
+$ash-gray: #BBCBCB;
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+table{
+    justify-self: center;
+    align-self: center;
+}
+
+body{
+    background-color: $ash-gray;
+}
+
+h1{
+    color: $english-violet;
+    padding: 2px;
+    text-shadow: 2px 2px $cool-gray;
+    text-align: center;
+}
+
+h2{
+    color: $english-violet;
+    font-size: 26px;
+}
+
+h3{
+    color: $english-violet;
+    font-size: 20px;
+}
+
+p{
+    color: $english-violet;
+}
+
+a{
+    color: $english-violet;
+}
+
+b{
+    color: $english-violet;
+}
+
+i{
+    color: $english-violet;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+progress{
+    display: block;
+    margin: 0 auto;
+    accent-color: $english-violet;
+}
+
+font{
+    color: $english-violet;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul {
+    color: $english-violet;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catAnimation {
+    opacity: 0;
+  animation-name: showImage;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
