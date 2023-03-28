@@ -17,8 +17,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-prod": "webpack --config ./webpack.prod.js",
-    "start-dev": "webpack --config ./webpack.config.js"
+    "start-prod": "webpack --mode production",
+    "start-dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",

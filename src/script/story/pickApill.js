@@ -21,7 +21,7 @@ if(document.getElementById('pickApill') != null){
         thLeft.appendChild(h1Left);
         let aLeft = document.createElement("a");
         aLeft.innerText = "⇜";
-        aLeft.setAttribute('href', "./nuevos-lanzamientos.html");
+        aLeft.setAttribute('href', "../nuevos-lanzamientos.html");
         h1Left.appendChild(aLeft);
     
         let hr = document.createElement("hr");
