@@ -1,5 +1,31 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+
+  },
+  "name": "lab-07",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerEsq/Lab-07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerEsq/Lab-07/issues"
+  },
+  "homepage": "https://github.com/FerEsq/Lab-07#readme",
+  "description": ""
 }

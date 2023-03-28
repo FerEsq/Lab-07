@@ -20,7 +20,7 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/city.html");
+    aLeft.setAttribute('href', "/src/story/red-pill.html");
     h1Left.appendChild(aLeft);
 
     let thRight = document.createElement("th");
@@ -29,7 +29,7 @@ function createHeader(){
     thRight.appendChild(h1Right);
     let aRight = document.createElement("a");
     aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/lesson.html");
+    aRight.setAttribute('href', "/src/story/city.html");
     h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
@@ -50,7 +50,7 @@ function createContent(){
     let th1 = document.createElement("th");
     tr1.appendChild(th1);
     let h2 = document.createElement("h2");
-    h2.innerText = "La muchedumbre terminó alcanzandote";
+    h2.innerText = "Que divertido es usar tus superpoderes!";
     th1.appendChild(h2);
 
     let tr2 = document.createElement("tr");
@@ -58,23 +58,28 @@ function createContent(){
     let th2 = document.createElement("th");
     tr2.appendChild(th2);
     let h3 = document.createElement("h3");
-    h3.innerText = "Y parece que acabaron contigo";
+    h3.innerText = "Pero ten cuidado, parece que la ciudad ya se ha enterado de ti y tus habilidades";
     th2.appendChild(h3);
 
     let td = document.createElement("td");
     tableText.appendChild(td);
     let img = document.createElement("img");
-    img.setAttribute('src', "https://art.pixilart.com/1d506ddb543c512.png");
-    img.width = "296";
-    img.height = "296";
+    img.setAttribute('src', "https://d2w9rnfcy7mm78.cloudfront.net/7964766/original_09b81e6ce7debbeacad68db1a01c4245.gif?1594429227");
+    img.width = "300";
+    img.height = "206";
     td.appendChild(img);
+
+    let br1 = document.createElement("br");
+    divContainer.appendChild(br1);
+    let br2 = document.createElement("br");
+    divContainer.appendChild(br2);
 
     let audio = document.createElement("audio");
     audio.autoplay = true;
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/dead.mp3");
+    source.setAttribute('src', "/src/media/dead.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 }
@@ -88,13 +93,13 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "80";
+    progressBar.value = "40";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
     iPage.className = "footerText";
-    iPage.innerText = "~ 5 ~"
+    iPage.innerText = "~ 3 ~"
     footer.appendChild(iPage);
     
     let br = document.createElement("br");

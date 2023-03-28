@@ -20,8 +20,17 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/pick-a-pill.html");
+    aLeft.setAttribute('href', "/src/story/pick-a-pill.html");
     h1Left.appendChild(aLeft);
+
+    let thRight = document.createElement("th");
+    tableNav.appendChild(thRight);
+    let h1Right = document.createElement("h1");
+    thRight.appendChild(h1Right);
+    let aRight = document.createElement("a");
+    aRight.innerText = "⇝";
+    aRight.setAttribute('href', "/src/story/blue-end.html");
+    h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
     header.appendChild(hr);
@@ -39,43 +48,18 @@ function createContent(){
     let tr1 = document.createElement("tr");
     tableText.appendChild(tr1);
     let th1 = document.createElement("th");
-    th1.colSpan = "2";
     tr1.appendChild(th1);
-    let img = document.createElement("img");
-    img.setAttribute('src', "https://i.pinimg.com/originals/7d/09/a4/7d09a485cb23ebed6cb999e0f4302dd6.gif");
-    img.width = "122";
-    img.height = "122";
-    th1.appendChild(img);
-
-    let tr2 = document.createElement("tr");
-    tableText.appendChild(tr2);
-    let th2 = document.createElement("th");
-    th2.colSpan = "2";
-    tr2.appendChild(th2);
     let h2 = document.createElement("h2");
-    h2.innerText = "Ahora tienes superpoderes";
-    th2.appendChild(h2);
-    let h3 = document.createElement("h3");
-    h3.innerText = "¿Qué quieres hacer con ellos?";
-    th2.appendChild(h3);
+    h2.innerText = "¿No te sientes un poco maread@?";
+    th1.appendChild(h2);
 
-    let td1 = document.createElement("td");
-    tableText.appendChild(td1);
-    let h4One = document.createElement("h4");
-    td1.appendChild(h4One);
-    let a1 = document.createElement("a");
-    a1.setAttribute('href', "/story/you.html");
-    a1.innerText = "Usarlos para ti";
-    h4One.appendChild(a1);
-
-    let td2 = document.createElement("td");
-    tableText.appendChild(td2);
-    let h4Two = document.createElement("h4");
-    td2.appendChild(h4Two);
-    let a2 = document.createElement("a");
-    a2.setAttribute('href', "/story/everyone.html");
-    a2.innerText = "Usarlos para los demás";
-    h4Two.appendChild(a2);
+    let td = document.createElement("td");
+    tableText.appendChild(td);
+    let img = document.createElement("img");
+    img.setAttribute('src', "https://i.pinimg.com/originals/5a/4c/91/5a4c91599d1d921747c0a64e31eb2036.gif");
+    img.width = "300";
+    img.height = "206";
+    td.appendChild(img);
     
     let br = document.createElement("br");
     divContainer.appendChild(br);
@@ -85,7 +69,7 @@ function createContent(){
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/superpowers.mp3");
+    source.setAttribute('src', "/src/media/dizzy.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 }
@@ -99,7 +83,7 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "20";
+    progressBar.value = "33";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 

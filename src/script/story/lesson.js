@@ -28,7 +28,7 @@ function createHeader(){
     ul.appendChild(liIndex);
     let aIndex = document.createElement("a");
     aIndex.className = "nav-link";
-    aIndex.setAttribute('href', "/nuevos-lanzamientos.html");
+    aIndex.setAttribute('href', "/src/nuevos-lanzamientos.html");
     aIndex.innerText = "Volver al Inicio";
     liIndex.appendChild(aIndex);
 }

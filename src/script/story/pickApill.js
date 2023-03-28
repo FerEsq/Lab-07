@@ -20,17 +20,8 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/pick-a-pill.html");
+    aLeft.setAttribute('href', "/src/nuevos-lanzamientos.html");
     h1Left.appendChild(aLeft);
-
-    let thRight = document.createElement("th");
-    tableNav.appendChild(thRight);
-    let h1Right = document.createElement("h1");
-    thRight.appendChild(h1Right);
-    let aRight = document.createElement("a");
-    aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/blue-end.html");
-    h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
     header.appendChild(hr);
@@ -48,28 +39,45 @@ function createContent(){
     let tr1 = document.createElement("tr");
     tableText.appendChild(tr1);
     let th1 = document.createElement("th");
+    th1.colSpan = "2";
     tr1.appendChild(th1);
-    let h2 = document.createElement("h2");
-    h2.innerText = "¿No te sientes un poco maread@?";
-    th1.appendChild(h2);
+    let h1 = document.createElement("h1");
+    h1.innerText = "Escoge una píldora";
+    th1.appendChild(h1);
 
-    let td = document.createElement("td");
-    tableText.appendChild(td);
-    let img = document.createElement("img");
-    img.setAttribute('src', "https://i.pinimg.com/originals/5a/4c/91/5a4c91599d1d921747c0a64e31eb2036.gif");
-    img.width = "300";
-    img.height = "206";
-    td.appendChild(img);
-    
-    let br = document.createElement("br");
-    divContainer.appendChild(br);
+    let td1 = document.createElement("td");
+    tableText.appendChild(td1);
+    let a1 = document.createElement("a");
+    a1.setAttribute('href', "/src/story/red-pill.html");
+    td1.appendChild(a1);
+    let imgRed = document.createElement("img");
+    imgRed.setAttribute('src', "/src/media/red-pill.png");
+    imgRed.width = "115";
+    imgRed.height = "68";
+    a1.appendChild(imgRed);
+
+    let td2 = document.createElement("td");
+    tableText.appendChild(td2);
+    let a2 = document.createElement("a");
+    a2.setAttribute('href', "/src/story/blue-pill.html");
+    td2.appendChild(a2);
+    let imgBlue = document.createElement("img");
+    imgBlue.setAttribute('src', "/src/media/blue-pill.png");
+    imgBlue.width = "115";
+    imgBlue.height = "68";
+    a2.appendChild(imgBlue);
+
+    let br1 = document.createElement("br");
+    divContainer.appendChild(br1);
+    let br2 = document.createElement("br");
+    divContainer.appendChild(br2);
 
     let audio = document.createElement("audio");
     audio.autoplay = true;
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/dizzy.mp3");
+    source.setAttribute('src', "/src/media/pills.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 }
@@ -83,13 +91,13 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "33";
+    progressBar.value = "0";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
     iPage.className = "footerText";
-    iPage.innerText = "~ 2 ~"
+    iPage.innerText = "~ 1 ~"
     footer.appendChild(iPage);
     
     let br = document.createElement("br");

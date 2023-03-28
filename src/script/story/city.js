@@ -20,7 +20,7 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/you.html");
+    aLeft.setAttribute('href', "/src/story/you.html");
     h1Left.appendChild(aLeft);
 
     let thRight = document.createElement("th");
@@ -29,7 +29,7 @@ function createHeader(){
     thRight.appendChild(h1Right);
     let aRight = document.createElement("a");
     aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/you-end.html");
+    aRight.setAttribute('href', "/src/story/you-end.html");
     h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
@@ -79,7 +79,7 @@ function createContent(){
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/chaos.mp3");
+    source.setAttribute('src', "/src/media/chaos.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 

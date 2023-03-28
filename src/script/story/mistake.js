@@ -20,7 +20,7 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/mistake.html");
+    aLeft.setAttribute('href', "/src/story/everyone.html");
     h1Left.appendChild(aLeft);
 
     let thRight = document.createElement("th");
@@ -29,7 +29,7 @@ function createHeader(){
     thRight.appendChild(h1Right);
     let aRight = document.createElement("a");
     aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/lesson.html");
+    aRight.setAttribute('href', "/src/story/everyone-end.html");
     h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
@@ -50,7 +50,7 @@ function createContent(){
     let th1 = document.createElement("th");
     tr1.appendChild(th1);
     let h2 = document.createElement("h2");
-    h2.innerText = "La culpa te está consumiendo";
+    h2.innerText = "Te dije que tuvieras cuidado...";
     th1.appendChild(h2);
 
     let tr2 = document.createElement("tr");
@@ -58,15 +58,15 @@ function createContent(){
     let th2 = document.createElement("th");
     tr2.appendChild(th2);
     let h3 = document.createElement("h3");
-    h3.innerText = "Y parece que acabó contigo";
+    h3.innerText = "Este error te costará caro";
     th2.appendChild(h3);
 
     let td = document.createElement("td");
     tableText.appendChild(td);
     let img = document.createElement("img");
-    img.setAttribute('src', "https://art.pixilart.com/1d506ddb543c512.png");
-    img.width = "296";
-    img.height = "296";
+    img.setAttribute('src', "https://opengameart.org/sites/default/files/output_syXBmY.gif");
+    img.width = "329";
+    img.height = "185";
     td.appendChild(img);
 
     let audio = document.createElement("audio");
@@ -74,7 +74,7 @@ function createContent(){
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/dead.mp3");
+    source.setAttribute('src', "/src/media/ohno.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 }
@@ -88,13 +88,13 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "80";
+    progressBar.value = "60";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
     iPage.className = "footerText";
-    iPage.innerText = "~ 5 ~"
+    iPage.innerText = "~ 4 ~"
     footer.appendChild(iPage);
     
     let br = document.createElement("br");

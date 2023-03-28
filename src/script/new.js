@@ -78,7 +78,7 @@ function createContent(){
     tableBooks.appendChild(td1);
 
     let a2 = document.createElement("a");
-    a2.setAttribute('href', "/story/pick-a-pill.html");
+    a2.setAttribute('href', "/src/story/pick-a-pill.html");
     td1.appendChild(a2);
     let img1 = document.createElement("img");
     img1.setAttribute('src', "https://bookcart.azurewebsites.net/Upload/Default_image.jpg");
@@ -89,7 +89,7 @@ function createContent(){
     td1.appendChild(b1);
     let a1 = document.createElement("a");
     a1.innerText = "ʞooᙠ ɓuıssıW ǝɥ⊥";
-    a1.setAttribute('href', "/story/pick-a-pill.html");
+    a1.setAttribute('href', "/src/story/pick-a-pill.html");
     b1.appendChild(a1);
     let i1 = document.createElement("i");
     i1.innerText = "F̸̝̠̎û̸̪͈̠͌̂̚m̵̩̳̈ḯ̴̧̤̻͚͂͐k̴̯̱͓̅̉̚̕ở̸͙̹̮̓͂̿ ̸̛̟̱̙̰̟̆͗̈́K̵̢̙̜̜͊͂̋̃͘i̴̧̮͇̾̒m̶͔̩̰͚̾͊͒͗ų̷̺̉r̶̖̝͎̾̔͛͝a̶̡͍͙̾ ";

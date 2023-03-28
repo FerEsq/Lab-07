@@ -20,7 +20,7 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/blue-pill.html");
+    aLeft.setAttribute('href', "/src/story/city.html");
     h1Left.appendChild(aLeft);
 
     let thRight = document.createElement("th");
@@ -29,7 +29,7 @@ function createHeader(){
     thRight.appendChild(h1Right);
     let aRight = document.createElement("a");
     aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/lesson.html");
+    aRight.setAttribute('href', "/src/story/lesson.html");
     h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
@@ -50,7 +50,7 @@ function createContent(){
     let th1 = document.createElement("th");
     tr1.appendChild(th1);
     let h2 = document.createElement("h2");
-    h2.innerText = "Oh no, la píldora tenía veneno";
+    h2.innerText = "La muchedumbre terminó alcanzandote";
     th1.appendChild(h2);
 
     let tr2 = document.createElement("tr");
@@ -58,7 +58,7 @@ function createContent(){
     let th2 = document.createElement("th");
     tr2.appendChild(th2);
     let h3 = document.createElement("h3");
-    h3.innerText = "Y parece que acabó contigo";
+    h3.innerText = "Y parece que acabaron contigo";
     th2.appendChild(h3);
 
     let td = document.createElement("td");
@@ -74,7 +74,7 @@ function createContent(){
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/dead.mp3");
+    source.setAttribute('src', "/src/media/dead.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
 }
@@ -88,13 +88,13 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "66";
+    progressBar.value = "80";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
     iPage.className = "footerText";
-    iPage.innerText = "~ 3 ~"
+    iPage.innerText = "~ 5 ~"
     footer.appendChild(iPage);
     
     let br = document.createElement("br");
