@@ -1,4 +1,15 @@
 import './script/inicio.js';
 import './script/new.js';
 import './script/popular.js';
+import './script/story/blueEnd.js';
+import './script/story/bluePill.js';
+import './script/story/city.js';
+import './script/story/everyone.js';
+import './script/story/everyoneEnd.js';
+import './script/story/lesson.js';
+import './script/story/mistake.js';
+import './script/story/pickApill.js';
+import './script/story/redPill.js';
+import './script/story/you.js';
+import './script/story/youEnd.js';
 import './style/styles.css';
