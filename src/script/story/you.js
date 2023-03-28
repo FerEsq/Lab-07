@@ -71,17 +71,6 @@ function createContent(){
 
     let br1 = document.createElement("br");
     divContainer.appendChild(br1);
-    let br2 = document.createElement("br");
-    divContainer.appendChild(br2);
-
-    let audio = document.createElement("audio");
-    audio.autoplay = true;
-    audio.controls = true;
-    divContainer.appendChild(audio);
-    let source = document.createElement("source");
-    source.setAttribute('src', "/src/media/dead.mp3");
-    source.setAttribute('type', "audio/mpeg");
-    audio.appendChild(source);
 }
 
 function createFooter(){
