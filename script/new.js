@@ -76,11 +76,15 @@ function createContent(){
 
     let td1 = document.createElement("td");
     tableBooks.appendChild(td1);
+
+    let a2 = document.createElement("a");
+    a2.setAttribute('href', "/story/pick-a-pill.html");
+    td1.appendChild(a2);
     let img1 = document.createElement("img");
     img1.setAttribute('src', "https://bookcart.azurewebsites.net/Upload/Default_image.jpg");
     img1.width = "140";
     img1.height = "211";
-    td1.appendChild(img1);
+    a2.appendChild(img1);
     let b1 = document.createElement("b");
     td1.appendChild(b1);
     let a1 = document.createElement("a");
@@ -113,7 +117,7 @@ function createContent(){
     img3.height = "211";
     td3.appendChild(img3);
     let b3 = document.createElement("b");
-    b3.innerText = "ㅤㅤI Am a Cat";
+    b3.innerText = "I Am a Cat";
     td3.appendChild(b3);
     let i3 = document.createElement("i");
     i3.innerText = "Natsume Sōseki";
@@ -156,3 +160,5 @@ function createFooter(){
     let br = document.createElement("br");
     footer.appendChild(br);
 }
+
+

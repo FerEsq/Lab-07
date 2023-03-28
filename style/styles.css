@@ -15,6 +15,10 @@ th {
   text-align: center !important;
 }
 
+td {
+  text-align: center !important;
+}
+
 body {
   background-color: #BBCBCB !important;
 }
@@ -119,6 +123,20 @@ footer {
   }
   to {
     opacity: 1;
+  }
+}
+.cityAnimation {
+  position: absolute;
+  left: 0;
+  animation: moveGif 5s linear infinite;
+}
+
+@keyframes moveGif {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
   }
 }
 audio {

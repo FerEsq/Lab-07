@@ -20,17 +20,8 @@ function createHeader(){
     thLeft.appendChild(h1Left);
     let aLeft = document.createElement("a");
     aLeft.innerText = "⇜";
-    aLeft.setAttribute('href', "/story/you.html");
+    aLeft.setAttribute('href', "/story/pick-a-pill.html");
     h1Left.appendChild(aLeft);
-
-    let thRight = document.createElement("th");
-    tableNav.appendChild(thRight);
-    let h1Right = document.createElement("h1");
-    thRight.appendChild(h1Right);
-    let aRight = document.createElement("a");
-    aRight.innerText = "⇝";
-    aRight.setAttribute('href', "/story/you-end.html");
-    h1Right.appendChild(aRight);
 
     let hr = document.createElement("hr");
     header.appendChild(hr);
@@ -48,43 +39,55 @@ function createContent(){
     let tr1 = document.createElement("tr");
     tableText.appendChild(tr1);
     let th1 = document.createElement("th");
+    th1.colSpan = "2";
     tr1.appendChild(th1);
-    let h2 = document.createElement("h2");
-    h2.innerText = "A la ciudad no le gusta tu egoísmo";
-    th1.appendChild(h2);
+    let img = document.createElement("img");
+    img.setAttribute('src', "https://i.pinimg.com/originals/7d/09/a4/7d09a485cb23ebed6cb999e0f4302dd6.gif");
+    img.width = "122";
+    img.height = "122";
+    th1.appendChild(img);
 
     let tr2 = document.createElement("tr");
     tableText.appendChild(tr2);
     let th2 = document.createElement("th");
+    th2.colSpan = "2";
     tr2.appendChild(th2);
+    let h2 = document.createElement("h2");
+    h2.innerText = "Ahora tienes superpoderes";
+    th2.appendChild(h2);
     let h3 = document.createElement("h3");
-    h3.innerText = "Despidete de tu maravilloso regalo...";
+    h3.innerText = "¿Qué quieres hacer con ellos?";
     th2.appendChild(h3);
 
-    let div2 = document.createElement("div");
-    div2.style.height = "180px";
-    divContainer.appendChild(div2);
-    let img = document.createElement("img");
-    img.className = "cityAnimation"
-    img.setAttribute('src', "https://img.itch.zone/aW1hZ2UvODc3OTEyLzQ5NDA3MTAuZ2lm/original/a4aA6i.gif");
-    img.width = "240";
-    img.height = "160";
-    div2.appendChild(img);
+    let td1 = document.createElement("td");
+    tableText.appendChild(td1);
+    let h4One = document.createElement("h4");
+    td1.appendChild(h4One);
+    let a1 = document.createElement("a");
+    a1.setAttribute('href', "/story/you.html");
+    a1.innerText = "Usarlos para ti";
+    h4One.appendChild(a1);
 
-    let br1 = document.createElement("br");
-    divContainer.appendChild(br1);
+    let td2 = document.createElement("td");
+    tableText.appendChild(td2);
+    let h4Two = document.createElement("h4");
+    td2.appendChild(h4Two);
+    let a2 = document.createElement("a");
+    a2.setAttribute('href', "/story/everyone.html");
+    a2.innerText = "Usarlos para los demás";
+    h4Two.appendChild(a2);
+    
+    let br = document.createElement("br");
+    divContainer.appendChild(br);
 
     let audio = document.createElement("audio");
     audio.autoplay = true;
     audio.controls = true;
     divContainer.appendChild(audio);
     let source = document.createElement("source");
-    source.setAttribute('src', "/media/chaos.mp3");
+    source.setAttribute('src', "/media/superpowers.mp3");
     source.setAttribute('type', "audio/mpeg");
     audio.appendChild(source);
-
-    let br2 = document.createElement("br");
-    divContainer.appendChild(br2);
 }
 
 function createFooter(){
@@ -96,13 +99,13 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "60";
+    progressBar.value = "20";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
     let iPage = document.createElement("i");
     iPage.className = "footerText";
-    iPage.innerText = "~ 4 ~"
+    iPage.innerText = "~ 2 ~"
     footer.appendChild(iPage);
     
     let br = document.createElement("br");

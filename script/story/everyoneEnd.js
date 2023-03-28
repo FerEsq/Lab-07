@@ -88,7 +88,7 @@ function createFooter(){
     footer.appendChild(hr);
 
     let progressBar = document.createElement("progress");
-    progressBar.value = "89";
+    progressBar.value = "80";
     progressBar.max = "100";
     footer.appendChild(progressBar);
 
