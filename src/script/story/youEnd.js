@@ -68,6 +68,15 @@ function createContent(){
     img.width = "296";
     img.height = "296";
     td.appendChild(img);
+
+    let audio = document.createElement("audio");
+    audio.autoplay = true;
+    audio.controls = true;
+    divContainer.appendChild(audio);
+    let source = document.createElement("source");
+    source.setAttribute('src', "/src/media/dead.mp3");
+    source.setAttribute('type', "audio/mpeg");
+    audio.appendChild(source);
 }
 
 function createFooter(){

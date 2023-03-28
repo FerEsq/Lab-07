@@ -63,6 +63,15 @@ function createContent(){
     
     let br = document.createElement("br");
     divContainer.appendChild(br);
+
+    let audio = document.createElement("audio");
+    audio.autoplay = true;
+    audio.controls = true;
+    divContainer.appendChild(audio);
+    let source = document.createElement("source");
+    source.setAttribute('src', "/src/media/dizzy.mp3");
+    source.setAttribute('type', "audio/mpeg");
+    audio.appendChild(source);
 }
 
 function createFooter(){

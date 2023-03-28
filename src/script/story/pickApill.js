@@ -51,7 +51,7 @@ function createContent(){
     a1.setAttribute('href', "/src/story/red-pill.html");
     td1.appendChild(a1);
     let imgRed = document.createElement("img");
-    imgRed.setAttribute('src', "https://i.ibb.co/DGTKX9S/red-pill.png");
+    imgRed.setAttribute('src', "/src/media/red-pill.png");
     imgRed.width = "115";
     imgRed.height = "68";
     a1.appendChild(imgRed);
@@ -62,13 +62,24 @@ function createContent(){
     a2.setAttribute('href', "/src/story/blue-pill.html");
     td2.appendChild(a2);
     let imgBlue = document.createElement("img");
-    imgBlue.setAttribute('src', "https://i.ibb.co/4ZMhdPR/blue-pill.png");
+    imgBlue.setAttribute('src', "/src/media/blue-pill.png");
     imgBlue.width = "115";
     imgBlue.height = "68";
     a2.appendChild(imgBlue);
 
     let br1 = document.createElement("br");
     divContainer.appendChild(br1);
+    let br2 = document.createElement("br");
+    divContainer.appendChild(br2);
+
+    let audio = document.createElement("audio");
+    audio.autoplay = true;
+    audio.controls = true;
+    divContainer.appendChild(audio);
+    let source = document.createElement("source");
+    source.setAttribute('src', "/src/media/pills.mp3");
+    source.setAttribute('type', "audio/mpeg");
+    audio.appendChild(source);
 }
 
 function createFooter(){
