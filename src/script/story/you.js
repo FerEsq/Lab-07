@@ -5,7 +5,7 @@ if(document.getElementById('you') != null){
         createFooter();
     }
     
-    function createHeader(){
+    const createHeader = () =>{
         let header = document.createElement("header");
         console.log(header)
         document.body.appendChild(header);
@@ -37,7 +37,7 @@ if(document.getElementById('you') != null){
         header.appendChild(hr);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let divContainer = document.createElement("div");
         console.log(divContainer);
         divContainer.className = "container";
@@ -74,7 +74,7 @@ if(document.getElementById('you') != null){
         divContainer.appendChild(br1);
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);

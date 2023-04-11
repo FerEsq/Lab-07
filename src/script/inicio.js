@@ -5,7 +5,7 @@ if(document.getElementById('index') != null){
         createFooter();
     }
     
-    function createHeader(){
+    const createHeader = () =>{
         let nav = document.createElement("nav");
         nav.className = "navbar navbar-expand-md navbar-light";
         console.log(nav)
@@ -58,7 +58,7 @@ if(document.getElementById('index') != null){
         header.appendChild(h1Title);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let imgCat = document.createElement("img");
         imgCat.className = "catAnimation"
         imgCat.setAttribute('src', "https://images.vexels.com/media/users/3/205195/isolated/preview/1c2ccc57f033c7b2612f1cce2b6eb7f2-bookshelf-sleeping-cat-illustration.png");
@@ -89,7 +89,7 @@ if(document.getElementById('index') != null){
         liNew.appendChild(aNew);
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);

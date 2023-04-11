@@ -5,7 +5,7 @@ if(document.getElementById('populares') != null){
         createFooter();
     }
     
-    function createHeader(){
+    const createHeader = () =>{
         let nav = document.createElement("nav");
         nav.className = "navbar navbar-expand-md navbar-light";
         console.log(nav)
@@ -61,7 +61,7 @@ if(document.getElementById('populares') != null){
         header.appendChild(hr);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let h2Subtitle = document.createElement("h2");
         h2Subtitle.innerText = "ㅤEstos son nuestros lanzamientos más populares:"
         document.body.appendChild(h2Subtitle);
@@ -133,7 +133,7 @@ if(document.getElementById('populares') != null){
     
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);

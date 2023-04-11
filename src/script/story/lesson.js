@@ -5,8 +5,7 @@ if(document.getElementById('lesson') != null){
         createFooter();
     }
     
-    function createHeader(){
-    
+    const createHeader = () =>{
         let nav = document.createElement("nav");
         nav.className = "navbar navbar-expand-md navbar-light";
         console.log(nav)
@@ -34,7 +33,7 @@ if(document.getElementById('lesson') != null){
         liIndex.appendChild(aIndex);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let divContainer = document.createElement("div");
         console.log(divContainer);
         divContainer.className = "container";
@@ -64,7 +63,7 @@ if(document.getElementById('lesson') != null){
     
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);

@@ -5,7 +5,7 @@ if(document.getElementById('mistake') != null){
         createFooter();
     }
     
-    function createHeader(){
+    const createHeader = () =>{
         let header = document.createElement("header");
         console.log(header)
         document.body.appendChild(header);
@@ -37,7 +37,7 @@ if(document.getElementById('mistake') != null){
         header.appendChild(hr);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let divContainer = document.createElement("div");
         console.log(divContainer);
         divContainer.className = "container";
@@ -65,13 +65,13 @@ if(document.getElementById('mistake') != null){
         let td = document.createElement("td");
         tableText.appendChild(td);
         let img = document.createElement("img");
-        img.setAttribute('src', "https://opengameart.org/sites/default/files/output_syXBmY.gif");
-        img.width = "329";
-        img.height = "185";
+        img.setAttribute('src', "https://i.gifer.com/y7.gif");
+        img.width = "212";
+        img.height = "199";
         td.appendChild(img);
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);

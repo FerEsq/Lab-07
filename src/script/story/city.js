@@ -5,7 +5,7 @@ if(document.getElementById('city') != null){
         createFooter();
     }
     
-    function createHeader(){
+    const createHeader = () =>{
         let header = document.createElement("header");
         console.log(header)
         document.body.appendChild(header);
@@ -37,7 +37,7 @@ if(document.getElementById('city') != null){
         header.appendChild(hr);
     }
     
-    function createContent(){
+    const createContent = () =>{
         let divContainer = document.createElement("div");
         console.log(divContainer);
         divContainer.className = "container";
@@ -67,16 +67,18 @@ if(document.getElementById('city') != null){
         divContainer.appendChild(div2);
         let img = document.createElement("img");
         img.className = "cityAnimation"
-        img.setAttribute('src', "https://img.itch.zone/aW1hZ2UvODc3OTEyLzQ5NDA3MTAuZ2lm/original/a4aA6i.gif");
-        img.width = "240";
-        img.height = "160";
+        img.setAttribute('src', "https://cdnb.artstation.com/p/assets/images/images/034/452/165/original/jeong-h-lee-ezgif-com-resize-3.gif?1612327608");
+        img.width = "200";
+        img.height = "238";
         div2.appendChild(img);
     
         let br1 = document.createElement("br");
         divContainer.appendChild(br1);
+        let br2 = document.createElement("br");
+        divContainer.appendChild(br2);
     }
     
-    function createFooter(){
+    const createFooter = () =>{
         let footer = document.createElement("footer");
         console.log(footer)
         document.body.appendChild(footer);
