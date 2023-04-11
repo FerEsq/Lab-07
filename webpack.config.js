@@ -8,7 +8,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'without_babel'),
     filename: '[name].bundle.js',
   },
 
