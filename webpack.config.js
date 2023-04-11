@@ -5,10 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
+    pollyfil: '@babel/polyfill'
   },
 
   output: {
-    path: path.resolve(__dirname, 'without_babel'),
+    path: path.resolve(__dirname, 'dist_webpack_babel'),
     filename: '[name].bundle.js',
   },
 
@@ -93,6 +94,13 @@ module.exports = {
       {
         test: /.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
       },
     ],
   },

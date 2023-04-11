@@ -1,0 +1,83 @@
+"use strict";
+
+if (document.getElementById('pickApill') != null) {
+  window.onload = function () {
+    createHeader();
+    createContent();
+    createFooter();
+  };
+  var createHeader = function createHeader() {
+    var header = document.createElement("header");
+    console.log(header);
+    document.body.appendChild(header);
+    var tableNav = document.createElement("table");
+    tableNav.cellPadding = "10";
+    tableNav.cellSpacing = "5";
+    header.appendChild(tableNav);
+    var thLeft = document.createElement("th");
+    tableNav.appendChild(thLeft);
+    var h1Left = document.createElement("h1");
+    thLeft.appendChild(h1Left);
+    var aLeft = document.createElement("a");
+    aLeft.innerText = "⇜";
+    aLeft.setAttribute('href', "../nuevos-lanzamientos.html");
+    h1Left.appendChild(aLeft);
+    var hr = document.createElement("hr");
+    header.appendChild(hr);
+  };
+  var createContent = function createContent() {
+    var divContainer = document.createElement("div");
+    console.log(divContainer);
+    divContainer.className = "container";
+    document.body.appendChild(divContainer);
+    var tableText = document.createElement("table");
+    divContainer.appendChild(tableText);
+    var tr1 = document.createElement("tr");
+    tableText.appendChild(tr1);
+    var th1 = document.createElement("th");
+    th1.colSpan = "2";
+    tr1.appendChild(th1);
+    var h1 = document.createElement("h1");
+    h1.innerText = "Escoge una píldora";
+    th1.appendChild(h1);
+    var td1 = document.createElement("td");
+    tableText.appendChild(td1);
+    var a1 = document.createElement("a");
+    a1.setAttribute('href', "red-pill.html");
+    td1.appendChild(a1);
+    var imgRed = document.createElement("img");
+    imgRed.setAttribute('src', "https://i.ibb.co/DGTKX9S/red-pill.png");
+    imgRed.width = "115";
+    imgRed.height = "68";
+    a1.appendChild(imgRed);
+    var td2 = document.createElement("td");
+    tableText.appendChild(td2);
+    var a2 = document.createElement("a");
+    a2.setAttribute('href', "blue-pill.html");
+    td2.appendChild(a2);
+    var imgBlue = document.createElement("img");
+    imgBlue.setAttribute('src', "https://i.ibb.co/4ZMhdPR/blue-pill.png");
+    imgBlue.width = "115";
+    imgBlue.height = "68";
+    a2.appendChild(imgBlue);
+    var br1 = document.createElement("br");
+    divContainer.appendChild(br1);
+  };
+  var createFooter = function createFooter() {
+    var footer = document.createElement("footer");
+    console.log(footer);
+    document.body.appendChild(footer);
+    var hr = document.createElement("hr");
+    footer.appendChild(hr);
+    var progressBar = document.createElement("progress");
+    progressBar.value = "0";
+    progressBar.max = "100";
+    footer.appendChild(progressBar);
+    var iPage = document.createElement("i");
+    iPage.className = "footerText";
+    iPage.innerText = "~ 1 ~";
+    footer.appendChild(iPage);
+    var br = document.createElement("br");
+    footer.appendChild(br);
+  };
+}

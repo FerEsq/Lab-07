@@ -1,3 +1,18 @@
+import "core-js/features/promise";
+
+function loadImage(url) {
+    return new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => {
+        resolve(image);
+      };
+      image.onerror = () => {
+        reject(new Error(`Failed to load image from ${url}`));
+      };
+      image.src = url;
+    });
+}
+
 if(document.getElementById('index') != null){
     window.onload = () => {
         createHeader();
@@ -60,11 +75,21 @@ if(document.getElementById('index') != null){
     
     const createContent = () =>{
         let imgCat = document.createElement("img");
-        imgCat.className = "catAnimation"
-        imgCat.setAttribute('src', "https://images.vexels.com/media/users/3/205195/isolated/preview/1c2ccc57f033c7b2612f1cce2b6eb7f2-bookshelf-sleeping-cat-illustration.png");
+        imgCat.setAttribute('src', "https://i.pinimg.com/originals/d9/f2/15/d9f21515b1e38d83e94fdbce88f623b6.gif");
         imgCat.width = "256";
         imgCat.height = "256";
         document.body.appendChild(imgCat);
+
+        setTimeout(() => {
+            loadImage('https://images.vexels.com/media/users/3/205195/isolated/preview/1c2ccc57f033c7b2612f1cce2b6eb7f2-bookshelf-sleeping-cat-illustration.png')
+              .then(image => {
+                imgCat.className = "catAnimation"
+                imgCat.setAttribute('src', image.src);
+              })
+              .catch(error => {
+                console.error(error);
+              });
+          }, 6000);
     
         let h2Subtitle = document.createElement("h2");
         //ㅤ --> espacio

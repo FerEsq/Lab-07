@@ -1,0 +1,84 @@
+"use strict";
+
+if (document.getElementById('everyone') != null) {
+  window.onload = function () {
+    createHeader();
+    createContent();
+    createFooter();
+  };
+  var createHeader = function createHeader() {
+    var header = document.createElement("header");
+    console.log(header);
+    document.body.appendChild(header);
+    var tableNav = document.createElement("table");
+    tableNav.cellPadding = "10";
+    tableNav.cellSpacing = "5";
+    header.appendChild(tableNav);
+    var thLeft = document.createElement("th");
+    tableNav.appendChild(thLeft);
+    var h1Left = document.createElement("h1");
+    thLeft.appendChild(h1Left);
+    var aLeft = document.createElement("a");
+    aLeft.innerText = "⇜";
+    aLeft.setAttribute('href', "red-pill.html");
+    h1Left.appendChild(aLeft);
+    var thRight = document.createElement("th");
+    tableNav.appendChild(thRight);
+    var h1Right = document.createElement("h1");
+    thRight.appendChild(h1Right);
+    var aRight = document.createElement("a");
+    aRight.innerText = "⇝";
+    aRight.setAttribute('href', "mistake.html");
+    h1Right.appendChild(aRight);
+    var hr = document.createElement("hr");
+    header.appendChild(hr);
+  };
+  var createContent = function createContent() {
+    var divContainer = document.createElement("div");
+    console.log(divContainer);
+    divContainer.className = "container";
+    document.body.appendChild(divContainer);
+    var tableText = document.createElement("table");
+    divContainer.appendChild(tableText);
+    var tr1 = document.createElement("tr");
+    tableText.appendChild(tr1);
+    var th1 = document.createElement("th");
+    tr1.appendChild(th1);
+    var h2 = document.createElement("h2");
+    h2.innerText = "La ciudad está muy feliz de tener tu ayuda";
+    th1.appendChild(h2);
+    var tr2 = document.createElement("tr");
+    tableText.appendChild(tr2);
+    var th2 = document.createElement("th");
+    tr2.appendChild(th2);
+    var h3 = document.createElement("h3");
+    h3.innerText = "Pero ten cuidado, no puedes cometer errores";
+    th2.appendChild(h3);
+    var td = document.createElement("td");
+    tableText.appendChild(td);
+    var img = document.createElement("img");
+    img.setAttribute('src', "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c68bd99-92a3-4476-8306-f5a95c1ade32/dbfl4pn-7e1b0c3d-117e-47da-bc20-3d71c719bf50.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZjNjhiZDk5LTkyYTMtNDQ3Ni04MzA2LWY1YTk1YzFhZGUzMlwvZGJmbDRwbi03ZTFiMGMzZC0xMTdlLTQ3ZGEtYmMyMC0zZDcxYzcxOWJmNTAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5OPofxQkKWr247epvmbXDvS0pq3Rpzuh3vIK8g3hR4I");
+    img.width = "326";
+    img.height = "185";
+    td.appendChild(img);
+    var br = document.createElement("br");
+    divContainer.appendChild(br);
+  };
+  var createFooter = function createFooter() {
+    var footer = document.createElement("footer");
+    console.log(footer);
+    document.body.appendChild(footer);
+    var hr = document.createElement("hr");
+    footer.appendChild(hr);
+    var progressBar = document.createElement("progress");
+    progressBar.value = "40";
+    progressBar.max = "100";
+    footer.appendChild(progressBar);
+    var iPage = document.createElement("i");
+    iPage.className = "footerText";
+    iPage.innerText = "~ 3 ~";
+    footer.appendChild(iPage);
+    var br = document.createElement("br");
+    footer.appendChild(br);
+  };
+}
